@@ -17,6 +17,12 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.582);
 }
 
+select {
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
 input {
     border-radius: 10px;
     height: 25px;
