@@ -40,10 +40,14 @@ function finalizar() {
         alert('Adicione valores antes de finalizar!')
     } else {
         let tot = valores.length
+        let maior = Math.max(...valores)
+        let menor = Math.min(...valores)
 
 
         res.innerHTML = ''
         res.innerHTML += `<p>Ao todo, temos ${tot} números cadastrados.</p>`
+        res.innerHTML += `<p> O maior valor informado foi ${maior}.</p>`
+        res.innerHTML += `<p> O menor valor informado foi ${menor}.</p>`
 
     }
 }
