@@ -42,12 +42,20 @@ function finalizar() {
         let tot = valores.length
         let maior = Math.max(...valores)
         let menor = Math.min(...valores)
+        let soma = 0
+        let media = 0
 
+        for (let pos in valores) {
+            soma += valores[pos]
+        }
+
+        
 
         res.innerHTML = ''
         res.innerHTML += `<p>Ao todo, temos ${tot} números cadastrados.</p>`
         res.innerHTML += `<p> O maior valor informado foi ${maior}.</p>`
         res.innerHTML += `<p> O menor valor informado foi ${menor}.</p>`
+        res.innerHTML += `<p> A soma dos valores informados foi ${soma}.</p>`
 
     }
 }
